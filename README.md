@@ -103,6 +103,28 @@ ARIMA will not work well with seasonal data, so we use SARIMA model.
 
 #### Prediction
 
-After training the model, we try to predict the stock value for the next 10 days.
+After training the model, we predict the stock value for the next 10 days.
 
 ![Plot for next 10 days](predict.JPG)
+
+### Spliting the data into train and test.
+
+The data is split into train and test set for the purpose of training the model and testing the model. We keep the last 30 days of data for testing and the remianing data for training.
+
+![Train-Test_split](trainNtest.JPG)
+
+The train set is then used to train the SARIMA model and the test set is then used to make the predictions.
+![Train and predicted data](trainNpredicted.JPG)
+
+
+### Evaluating the model.
+
+We use RMSE and MAPE as our evaluation matrix.
+
+RMSE measures the average magnitude of the errors in a set of predictions, i.e., it calculates the square root of the average of squared differences between the predicted and actual values. The lower the value of RMSE, the better the model's performance.
+
+MAPE, on the other hand, measures the percentage difference between the predicted and actual values. It is calculated as the average absolute percentage difference between the predicted and actual values, expressed as a percentage of the actual value. The lower the value of MAPE, the better the model's performance.
+
+RMSE is sensitive to outliers and large errors, while MAPE is not. MAPE, however, can be problematic when the actual values are close to zero, as it can lead to division by zero or very large values.
+
+The model has an RMSE of 6.857 and MAPE of 0.0541.
