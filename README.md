@@ -72,3 +72,37 @@ The order of regression (p) and order of moving average (q) are determined by co
 
 ### Calculating p,d and q
 
+#### d value
+We use differencing to find the value of d.
+
+![Value of d](dvalue.JPG)
+
+In first-order differencing we have fewer noises in the data while after 1st order there is an increase in the noise. So we can select 1st order differencing for our model. We can also verify this using an autocorrelation plot. 
+
+#### p value
+
+![Value of p](pvalue.JPG)
+
+In the above autocorrelation plot, the curve is moving down after the 7th line of the first boundary. That is how to decide the p-value. Hence the value of p is 7.
+
+#### q value
+
+![Value of q](qvalue.JPG)
+
+In the above partial autocorrelation plot, we can see that only two points are far away from all the points. That is how to decide the q value. Hence the value of q is 2.
+
+### Training the model
+
+#### Using ARIMA model
+![ARIMA](arima.JPG)
+
+ARIMA will not work well with seasonal data, so we use SARIMA model.
+
+#### Using SARIMA model
+![SARIMA](sarima.JPG)
+
+#### Prediction
+
+After training the model, we try to predict the stock value for the next 10 days.
+
+![Plot for next 10 days](predict.JPG)
