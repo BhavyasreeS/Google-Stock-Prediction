@@ -128,3 +128,10 @@ MAPE, on the other hand, measures the percentage difference between the predicte
 RMSE is sensitive to outliers and large errors, while MAPE is not. MAPE, however, can be problematic when the actual values are close to zero, as it can lead to division by zero or very large values.
 
 The model has an RMSE of 6.857 and MAPE of 0.0541.
+
+
+
+### References:
+1. https://analyticsindiamag.com/quick-way-to-find-p-d-and-q-values-for-arima/
+2. https://thecleverprogrammer.com/2022/06/21/time-series-forecasting-with-arima/
+
