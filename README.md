@@ -47,4 +47,28 @@ Alternative hypothesis (H1): The series is stationary
 The test will return a test static and critical value for different confidence levels. We reject the null hypothesis if the test statistic is less than the critical value, in which case we accept the alternative i.e, the series is stationary.
 
 We perform the test on close value. 
+![Stationarity Test](adfuller.JPG)
+
+The p-value is less than the critical value (0.05). Therefore we reject the null hypothesis, i.e, the series is stationary.
+
+## ARIMA
+An autoregressive integrated moving average, or ARIMA, is a statistical analysis model that uses time series data to either better understand the data set or to predict future trends. 
+ARIMA makes use of lagged moving averages to smooth time series data.
+There are 3 main components to an ARIMA model.
+
+Autoregression (AR)- refers to a model that shows a changing variable that regresses on its own lagged, or prior, values. I.e, the past values have an effect on future values.
+
+Integrated (I):  represents the differencing of raw observations to allow the time series to become stationary (i.e., data values are replaced by the difference between the data values and the previous values)
+
+Moving Average (MA): incorporates the dependency between an observation and a residual error from a moving average model applied to lagged observations. By calculating the moving average, the impacts of random, short-term fluctuations on the price of a stock over a specified time frame are mitigated.
+
+## ARIMA Parameters
+For ARIMA models, a standard notation would be ARIMA with p, d, and q, where integer values substitute for the parameters to indicate the type of ARIMA model used. The parameters can be defined as:
+
+p: the number of lag observations in the model, also known as the lag order. (number of autoregressive terms)
+d: the number of times the raw observations are differenced; also known as the degree of differencing. (number of nonseasonal differences)
+q: the size of the moving average window, also known as the order of the moving average. (Number of lagged forecast errors in the prediction equation)
+The order of regression (p) and order of moving average (q) are determined by comparing autocorrelations and partial autocorrelations.
+
+### Calculating p,d and q
 
