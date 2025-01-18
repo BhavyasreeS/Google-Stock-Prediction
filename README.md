@@ -21,6 +21,13 @@ We use various charts such as candlestick chart, bar chart and rangeslider to vi
 
 ![Candlestick Chart](candlestick.JPG)
 
+#### Insights
+Each candlestick represents the stock's open, high, low, and close prices for a specific period (daily, weekly, etc.).
+
+Green Candlesticks: Indicate that the closing price was higher than the opening price (positive growth for the period).
+
+Red Candlesticks: Indicate that the closing price was lower than the opening price (negative growth for the period). 
+
 ![Bar Chart](barchart.JPG)
 
 ![Range Slider](rangeslider.JPG)
