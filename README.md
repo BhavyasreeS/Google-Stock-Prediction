@@ -27,6 +27,11 @@ Each candlestick represents the stock's open, high, low, and close prices for a 
 Green Candlesticks: Indicate that the closing price was higher than the opening price (positive growth for the period).
 
 Red Candlesticks: Indicate that the closing price was lower than the opening price (negative growth for the period). 
+#### Trends and Observations
+Downtrend: The stock price generally declined between May 2022 and October 2022.
+Recovery/Fluctuations: Starting around November 2022, there appears to be a gradual recovery or stabilization, with fluctuations continuing into March 2023.
+The price fluctuates widely, indicating high volatility during the period.
+After hitting a low around October 2022, the stock seems to trend upward or stabilize.
 
 ![Bar Chart](barchart.JPG)
 
