@@ -141,6 +141,9 @@ RMSE is sensitive to outliers and large errors, while MAPE is not. MAPE, however
 
 The model has an RMSE of 6.857 and MAPE of 0.0541.
 
+A MAPE of 0.0541 indicates that the model's predictions, on average, deviate from the actual values by 5.41%. This is generally considered very good, as MAPE values below 10% often indicate a highly accurate model.
+MAPE is scale-independent, making it easy to compare across datasets.
+
 
 
 ### References:
